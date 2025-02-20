@@ -6,7 +6,40 @@ import 'package:practice/Bololeans/Hard.dart';
 import 'package:practice/Bololeans/Median.dart';
 import 'package:practice/Bololeans/Task1.dart';
 import 'package:practice/Bololeans/Task2.dart';
+import 'package:practice/Supported%20Data%20Types%20in%20Dart/List/Task.dart';
+import 'package:practice/Supported%20Data%20Types%20in%20Dart/Map/Maptask.dart';
+import 'package:practice/Supported%20Data%20Types%20in%20Dart/Numbers/Task3.dart';
+import 'package:practice/Supported%20Data%20Types%20in%20Dart/String/String.dart';
+import 'package:practice/Supported%20Data%20Types%20in%20Dart/sets/Settask.dart';
 import 'package:practice/variables/Easy/Multivaraibles.dart';
+
+
+
+// ### Easy
+//
+// 1. **Uppercase Conversion***Task:* Declare a string with a greeting (e.g., “hello, flutter!”) and print the string in uppercase.
+// 2. **Substring Extraction***Task:* Declare a string for a Flutter widget’s title (e.g., “Flutter Widgets”) and print a substring that contains just “Widgets.”
+//
+// ### Medium
+//
+// 1. **Full Name Split***Task:* Write a function that accepts a full name (e.g., “John Doe”) and extracts the first and last names using `substring` (or `split`), then prints them separately.
+// 2. **String Manipulation for UI***Task:* Create a function that takes a string (a widget’s label) and returns the trimmed and capitalized version (e.g., convert “ home screen ” to “Home Screen”).
+//
+// ### Hard
+//
+// 1. **Widget Title Formatter***Task:* Write a function that accepts a string representing a Flutter widget’s title and:
+// - Trims leading/trailing whitespace.
+// - Capitalizes the first letter of each word.
+// - Checks if the title contains a specific substring (like “Flutter”) and appends “ - Official” if it does. *Use this function in a small Flutter app to format and display the widget title.*
+//
+//
+//
+//
+
+
+
+
+
 import 'package:practice/variables/Medium/Medium.dart';
 import 'package:practice/variables/datatypes.dart';
 
@@ -43,7 +76,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
       ),
-      home:Medium(),
+      home:Maptask(),
     );
   }
 }
