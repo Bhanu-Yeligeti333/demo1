@@ -6,6 +6,8 @@ import 'package:practice/Bololeans/Hard.dart';
 import 'package:practice/Bololeans/Median.dart';
 import 'package:practice/Bololeans/Task1.dart';
 import 'package:practice/Bololeans/Task2.dart';
+import 'package:practice/Operators/Bitwise/Bitwise.dart';
+import 'package:practice/Operators/Logical/Logical.dart';
 import 'package:practice/Supported%20Data%20Types%20in%20Dart/List/Task.dart';
 import 'package:practice/Supported%20Data%20Types%20in%20Dart/Map/Maptask.dart';
 import 'package:practice/Supported%20Data%20Types%20in%20Dart/Numbers/Task3.dart';
@@ -43,6 +45,9 @@ import 'package:practice/variables/Easy/Multivaraibles.dart';
 import 'package:practice/variables/Medium/Medium.dart';
 import 'package:practice/variables/datatypes.dart';
 
+import 'Operators/Arithmetic/Arigthmetic.dart';
+import 'Operators/Assignment/Assignment.dart';
+
 
 
 void main() {
@@ -76,7 +81,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
       ),
-      home:Maptask(),
+      home:Logical(),
     );
   }
 }
