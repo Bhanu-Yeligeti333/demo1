@@ -6,6 +6,15 @@ import 'package:practice/Bololeans/Hard.dart';
 import 'package:practice/Bololeans/Median.dart';
 import 'package:practice/Bololeans/Task1.dart';
 import 'package:practice/Bololeans/Task2.dart';
+import 'package:practice/Functions/Anonymous%20Functions%20(Lambdas)/Lambdas.dart';
+import 'package:practice/Functions/ArrowsFunctions/Arrows.dart';
+import 'package:practice/Functions/Basic%20Function%20Declaration%20and%20Calling/Basic.dart';
+import 'package:practice/Functions/FunctionParamaters/Namedparameters.dart';
+import 'package:practice/Functions/FunctionParamaters/Optional%20Positional%20Parameters.dart';
+import 'package:practice/Functions/FunctionParamaters/Required%20Positional%20Parameters.dart';
+import 'package:practice/Functions/Higher%E2%80%91Order%20Functions/Higher.dart';
+import 'package:practice/Functions/Recursion/Recursion.dart';
+import 'package:practice/Functions/ReturnValues/Return.dart';
 import 'package:practice/Operators/Bitwise/Bitwise.dart';
 import 'package:practice/Operators/Logical/Logical.dart';
 import 'package:practice/Supported%20Data%20Types%20in%20Dart/List/Task.dart';
@@ -81,7 +90,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
       ),
-      home:Logical(),
+      home:Higher(),
     );
   }
 }
