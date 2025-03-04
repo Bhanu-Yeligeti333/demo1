@@ -49,6 +49,11 @@ class _ReturnState extends State<Return> {
           Text("Medium: Area of 100x50 = $areaResult"),
           SizedBox(height: 10),
           Text("Hard: $formattedPrice"),
+          ElevatedButton(onPressed: () {
+            Navigator.pop(context);
+
+          },
+              child: Text("go back"))
 
         ],
       ),

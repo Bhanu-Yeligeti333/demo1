@@ -2,10 +2,14 @@
 // Write a function that accepts a boolean (e.g.,`isDarkMode`) and returns a string “Dark Mode” if true or “Light Mode” if false.
 // Then, display this string in a Flutter`Text`widget.
 import 'package:flutter/material.dart';
+import 'package:practice/Assign.dart';
 import 'package:practice/Bololeans/Hard.dart';
 import 'package:practice/Bololeans/Median.dart';
 import 'package:practice/Bololeans/Task1.dart';
 import 'package:practice/Bololeans/Task2.dart';
+import 'package:practice/Controlstatements/Conditional.dart';
+import 'package:practice/Controlstatements/Loopings.dart';
+import 'package:practice/Controlstatements/WhileLoop.dart';
 import 'package:practice/Functions/Anonymous%20Functions%20(Lambdas)/Lambdas.dart';
 import 'package:practice/Functions/ArrowsFunctions/Arrows.dart';
 import 'package:practice/Functions/Basic%20Function%20Declaration%20and%20Calling/Basic.dart';
@@ -22,6 +26,7 @@ import 'package:practice/Supported%20Data%20Types%20in%20Dart/Map/Maptask.dart';
 import 'package:practice/Supported%20Data%20Types%20in%20Dart/Numbers/Task3.dart';
 import 'package:practice/Supported%20Data%20Types%20in%20Dart/String/String.dart';
 import 'package:practice/Supported%20Data%20Types%20in%20Dart/sets/Settask.dart';
+import 'package:practice/Today.dart';
 import 'package:practice/variables/Easy/Multivaraibles.dart';
 
 
@@ -54,6 +59,15 @@ import 'package:practice/variables/Easy/Multivaraibles.dart';
 import 'package:practice/variables/Medium/Medium.dart';
 import 'package:practice/variables/datatypes.dart';
 
+import 'Bottom.dart';
+import 'Controlstatements/Dowhileloop.dart';
+import 'Controlstatements/Forinloop.dart';
+import 'Controlstatements/Integration Exercises.dart';
+import 'Controlstatements/Switchstatements.dart';
+import 'Controlstatements/Terenary.dart';
+import 'Controlstatements/functionalcollectionalmethods.dart';
+import 'Ecommerce/Home.dart';
+import 'Language.dart';
 import 'Operators/Arithmetic/Arigthmetic.dart';
 import 'Operators/Assignment/Assignment.dart';
 
@@ -71,26 +85,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // TRY THIS: Try running your application with "flutter run". You'll see
-        // the application has a purple toolbar. Then, without quitting the app,
-        // try changing the seedColor in the colorScheme below to Colors.green
-        // and then invoke "hot reload" (save your changes or press the "hot
-        // reload" button in a Flutter-supported IDE, or press "r" if you used
-        // the command line to start the app).
-        //
-        // Notice that the counter didn't reset back to zero; the application
-        // state is not lost during the reload. To reset the state, use hot
-        // restart instead.
-        //
-        // This works for code too, not just values: Most code changes can be
-        // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
-      ),
-      home:Higher(),
+      home:Integration(),
     );
   }
 }
