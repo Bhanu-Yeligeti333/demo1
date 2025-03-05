@@ -40,7 +40,7 @@ class _DowhileloopState extends State<Dowhileloop> {
     do{
         str1.add("Processing input...”");
         count+=1;
-    }while(count<3);
+    }while(count<4);
   }
   animateFrame()
   {
@@ -73,11 +73,11 @@ class _DowhileloopState extends State<Dowhileloop> {
             child: ListView.builder(
               itemCount: str1.length,
               itemBuilder:(context, index) {
-                return Text(" ${str1[index]}");
+                return Text("count=$count ${str1[index]}");
               },),
           ),SizedBox(height: 4,),
           Text("Task-3", style:  TextStyle( color:Colors.red),),
-          Container(
+           Container(
             height: 100,
             child: ListView.builder(
               itemCount: str2.length,

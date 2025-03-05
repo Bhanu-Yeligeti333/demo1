@@ -60,6 +60,7 @@ import 'package:practice/variables/Medium/Medium.dart';
 import 'package:practice/variables/datatypes.dart';
 
 import 'Bottom.dart';
+import 'Clasess/Basic Class Creation and Object Instantiation.dart';
 import 'Controlstatements/Dowhileloop.dart';
 import 'Controlstatements/Forinloop.dart';
 import 'Controlstatements/Integration Exercises.dart';
@@ -85,7 +86,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:Integration(),
+      home:Basicclass(),
     );
   }
 }

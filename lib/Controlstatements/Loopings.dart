@@ -35,7 +35,8 @@ class _LoopingsState extends State<Loopings> {
   List<String> str2=[];
   List<int> str3=[];
   List<int> str4=[];
-
+  List<String> str5=[];
+  List<String> widgetsi = ["Text", "Button", "Image","bhanu","prasad","yeligeti","Ldev"];
 
   display(){
     str.clear();
@@ -77,68 +78,93 @@ Multiply()
       str4.add(5*i);
     }
   }
-
+evenOdd(){
+    str5.clear();
+    for(int i=0;i<widgetsi.length;i++)
+      {
+        if(i%2==0)
+          {
+            str5.add(widgetsi[i].toUpperCase());
+          }
+        else{
+          str5.add(widgetsi[i].toLowerCase());
+        }
+      }
+}
   @override
   Widget build(BuildContext context) {
+    evenOdd();
     Multiply();
     printArrayvalues();
     display();
     buildWidgetList();
     simulateWidgetCreation();
     return Scaffold(
-      body: Column(
-        children: [
-          Container(
-            height: 100,
-            child: ListView.builder(
-              itemCount: widgets.length,
-              itemBuilder:(context, index) {
-              return Row(
-                children: [
-                  Text('Element at index $index is: ${str[index]}'),
-
-                ],
-              );
-            },),
-          ),SizedBox(height: 20),
-          Container(
-            height: 100,
-            child: ListView.builder(
-              itemCount: widgets.length,
-              itemBuilder:(context, index) {
-                return Text(str1[index]);
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text("printing the List values ",style: TextStyle(color: Colors.red),),
+            Container(
+              height: 100,
+              child: ListView.builder(
+                itemCount: widgets.length,
+                itemBuilder:(context, index) {
+                return Text('Element at index $index is: ${str[index]}');
               },),
-          ),
-          SizedBox(height: 4,),
-          Container(
-            height: 100,
-            child: ListView.builder(
-              itemCount: str2.length,
-              itemBuilder:(context, index) {
-                return Text(str2[index]);
-              },),
-          ),
-          SizedBox(height: 4,),
-          Container(
-            height: 100,
-            child: ListView.builder(
-              itemCount: str3.length,
-              itemBuilder:(context, index) {
-                return Text("Index $index: ${str3[index]}");
-              },),
-          ),
-          SizedBox(height: 3,),
-          Container(
-            height: 150,
-            child: ListView.builder(
-              itemCount: str4.length,
-              itemBuilder:(context, index) {
-                return Text("Mulitiplication of 5* $index =: ${str4[index]}");
-              },),
-          )
-
-
-        ],
+            ),SizedBox(height: 20),
+            Text("Printing the List values along with statemnet",style: TextStyle(color: Colors.red),),
+            Container(
+              height: 100,
+              child: ListView.builder(
+                itemCount: widgets.length,
+                itemBuilder:(context, index) {
+                  return Text(str1[index]);
+                },),
+            ),
+            SizedBox(height: 4,),
+            Text("Adding the Create Widget with Id statement and printing the values ",style: TextStyle(color: Colors.red),),
+            Container(
+              height: 100,
+              child: ListView.builder(
+                itemCount: str2.length,
+                itemBuilder:(context, index) {
+                  return Text(str2[index]);
+                },),
+            ),
+            SizedBox(height: 4,),
+            Text("Indexes followed by the values",style: TextStyle(color: Colors.red),),
+            Container(
+              height: 100,
+              child: ListView.builder(
+                itemCount: str3.length,
+                itemBuilder:(context, index) {
+                  return Text("Index $index: ${str3[index]}");
+                },),
+            ),
+            SizedBox(height: 3,),
+            Text("Printing Multiplication Number",style: TextStyle(color: Colors.red),),
+            Container(
+              height: 150,
+              child: ListView.builder(
+                itemCount: str4.length,
+                itemBuilder:(context, index) {
+                  return Text("Mulitiplication of 5* $index =: ${str4[index]}");
+                },),
+            ),SizedBox(height: 4,),
+            Text("Converting odd places lowercase() and even place Upper Case()",style: TextStyle(color: Colors.red),),
+            Container(
+              height: 150,
+              child: ListView.builder(
+                itemCount: str5.length,
+                itemBuilder:(context, index) {
+                  return Text("${str5[index]}");
+                },),
+            )
+        
+        
+          ],
+        ),
       ),
     );
   }
